@@ -1,37 +1,33 @@
 module.exports = {
     env: {
-        "browser": true,
-        "es2021": true
+        browser: true,
+        es2021: true
     },
     extends: [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:prettier/recommended",
-        "plugin:react/jsx-runtime"
+        'eslint:recommended',
+        'plugin:react/recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:prettier/recommended',
+        'plugin:react/jsx-runtime'
     ],
-    parser: "@typescript-eslint/parser",
+    parser: '@typescript-eslint/parser',
     parserOptions: {
-        "ecmaFeatures": {
-            "jsx": true
+        ecmaFeatures: {
+            jsx: true
         },
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+        ecmaVersion: 'latest',
+        sourceType: 'module'
     },
-    plugins: [
-        "react",
-        "@typescript-eslint",
-        "prettier"
-    ],
+    plugins: ['react', '@typescript-eslint', 'prettier'],
     settings: {
         react: {
             version: 'detect'
         }
     },
     rules: {
-        "prettier/prettier": "error",
-        "arrow-body-style": "off",
-        "prefer-arrow-callback": "off",
-        "no-unused-vars": "error"
+        'prettier/prettier': 'error',
+        'arrow-body-style': 'off',
+        'prefer-arrow-callback': 'off',
+        'no-unused-vars': 'error'
     }
 }
