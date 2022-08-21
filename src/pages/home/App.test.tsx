@@ -7,6 +7,6 @@ describe('Todo test', () => {
     it('should display msg', () => {
         render(<App />)
 
-        expect(screen.getByText('Hello 1 React')).toBeInTheDocument()
+        expect(screen.getByText('Hello React')).toBeInTheDocument()
     })
 })
