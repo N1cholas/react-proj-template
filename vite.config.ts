@@ -6,8 +6,21 @@ import react from '@vitejs/plugin-react'
 import viteEslint from 'vite-plugin-eslint'
 import * as path from 'path'
 
+const publicCSSVariablesPath = `@import "${path.resolve(
+  __dirname,
+  'src/styles/variables.less'
+)}";`
+
 // https://vitejs.dev/config/
 export default defineConfig({
+  css: {
+    preprocessorOptions: {
+      less: {
+        additionalData: publicCSSVariablesPath,
+        javascriptEnabled: true
+      }
+    }
+  },
   resolve: {
     alias: [
       {
