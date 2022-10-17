@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from '../../assets/react.svg'
 import './index.css'
 
-function App() {
+function Home() {
   const [count, setCount] = useState(0)
 
   return (
@@ -17,7 +17,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button role="button" onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p>
@@ -31,4 +31,4 @@ function App() {
   )
 }
 
-export default App
+export default Home
