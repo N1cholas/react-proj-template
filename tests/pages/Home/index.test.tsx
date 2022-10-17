@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { fireEvent, render, screen } from '@testing-library/react'
-import Home from '../../../src/pages/Home'
+import Home from '@/pages/Home'
 
 describe('Home test', () => {
   it('should match snapshot', () => {
